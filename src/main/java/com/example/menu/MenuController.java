@@ -79,6 +79,15 @@ public class MenuController {
             case "Aktuális árak":
                 fxmlFileName = "aktarak.fxml";
                 break;
+            case "Historikus árak":
+                fxmlFileName = "histarak.fxml";
+                break;
+            case "Pozíció nyitás":
+                fxmlFileName = "pnyit.fxml";
+                break;
+            case "Pozíció zárás":
+                fxmlFileName = "pzar.fxml";
+                break;
 
             // További esetek hozzáadása szükség szerint
             default:
