@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.ToggleGroup?>
-<AnchorPane scaleShape="false" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menu.Olvas2Controller">
+<AnchorPane scaleShape="false" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menu.Olvas2Controller">
     <children>
         <Label layoutX="-2.0" layoutY="14.0" prefHeight="26.0" prefWidth="756.0" text=" Megjelenítés szűrők segítségével (Olvas2 almenü)" textFill="#e30202">
             <font>
@@ -33,7 +33,7 @@
       <Label layoutX="30.0" layoutY="77.0" text="Szerelő kiválasztás:" />
         <ComboBox fx:id="cb1" layoutX="138" layoutY="77" />
       <Label layoutX="30.0" layoutY="110.0" text="Cím keresés" />
-      <TextField fx:id="cimKereso"  layoutX="138.0" layoutY="106.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="cimKereso"  layoutX="138.0" layoutY="106.0" prefHeight="25.0" prefWidth="150.0" onKeyTyped="#szuresClick" />
         <fx:define><ToggleGroup fx:id="group" /></fx:define>
       <RadioButton fx:id="rb1" layoutX="332.0" layoutY="77.0" mnemonicParsing="false" text="5000 Ft alatti" toggleGroup="$group"/>
       <RadioButton fx:id="rb2" layoutX="332.0" layoutY="110.0" mnemonicParsing="false" text="5000 Ft feletti" toggleGroup="$group" />

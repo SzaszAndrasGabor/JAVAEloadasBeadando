@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane scaleShape="false" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menu.IrController">
+<AnchorPane scaleShape="false" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menu.IrController">
     <children>
         <Label layoutX="-2.0" layoutY="14.0" prefHeight="26.0" prefWidth="756.0" text="Új szerelő hozzáadása" textFill="#f50101">
             <font>
