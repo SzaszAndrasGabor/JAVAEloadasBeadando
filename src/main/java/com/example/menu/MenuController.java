@@ -70,6 +70,9 @@ public class MenuController {
             case "Letöltés2":
                 fxmlFileName = "letoltes2.fxml";
                 break;
+            case "Grafikon":
+                fxmlFileName = "grafikon.fxml";
+                break;
 
             // További esetek hozzáadása szükség szerint
             default:

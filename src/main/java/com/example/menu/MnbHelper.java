@@ -1,8 +1,8 @@
 package com.example.menu;
-
-import com.example.mnbapi.MNBArfolyamServiceSoap;
-import com.example.mnbapi.MNBArfolyamServiceSoapGetExchangeRatesStringFaultFaultMessage;
-import com.example.mnbapi.MNBArfolyamServiceSoapImpl;
+import jakarta.xml.ws.WebServiceException;
+import com.mnbapi.MNBArfolyamServiceSoap;
+import com.mnbapi.MNBArfolyamServiceSoapGetExchangeRatesStringFaultFaultMessage;
+import com.mnbapi.MNBArfolyamServiceSoapImpl;
 import javafx.scene.chart.XYChart;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -27,13 +27,20 @@ public class MnbHelper {
     private final MNBArfolyamServiceSoap service;
 
     public MnbHelper() {
+        System Helper;
+        MNBArfolyamServiceSoap tempService = null;
         try {
-            // Biztosítjuk, hogy az implementáció helyesen megy
+            // Biztosítjuk, hogy az implementáció helyesen jön létre
             MNBArfolyamServiceSoapImpl impl = new MNBArfolyamServiceSoapImpl();
-            this.service = impl.getCustomBindingMNBArfolyamServiceSoap();
+            tempService = impl.getCustomBindingMNBArfolyamServiceSoap();
         } catch (Exception e) {
-            throw new RuntimeException("Nem sikerült inicializálni a webszolgáltatást.", e);
+            // Pontos hibaüzenet naplózása
+            System.err.println("Hiba történt a MNBArfolyamServiceSoap inicializálása során: " + e.getMessage());
+            e.printStackTrace();
+            // Újabb információk ellenőrzése
+            throw new RuntimeException("Nem sikerült inicializálni a webszolgáltatást. Ellenőrizze a szolgáltatás elérhetőségét és beállításait.", e);
         }
+        this.service = tempService;
     }
 
     public Map<String, String> getAllInfo() {

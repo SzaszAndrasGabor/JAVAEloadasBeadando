@@ -15,7 +15,7 @@ requires org.joda.time;
     opens com.example.menu to javafx.fxml;
     exports com.example.menu;
 
-
+    opens com.mnbapi to com.sun.xml.bind;
     opens com.example.mnbapi to com.sun.xml.bind;
 
 

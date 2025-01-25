@@ -29,7 +29,7 @@
                         <items>
                             <MenuItem mnemonicParsing="false"  onAction="#handleMenuAction" text="Letöltés"/>
                             <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Letöltés2"/>
-                            <MenuItem mnemonicParsing="false"  onAction="#handleMenuAction" text="grafikon"/>
+                            <MenuItem mnemonicParsing="false"  onAction="#handleMenuAction" text="Grafikon"/>
                         </items>
                     </Menu>
                     <Menu mnemonicParsing="false" onAction="#handleMenuAction" text="Párhuzamos">
