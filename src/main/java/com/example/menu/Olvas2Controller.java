@@ -108,7 +108,7 @@ public class Olvas2Controller {
 
 
 
-    public void szuresClick(ActionEvent event) throws SQLException {
+    public void szuresClick() throws SQLException {
         int a = kivSzer();
         StringBuilder newFeltetel = new StringBuilder(" WHERE sz.az = m.szereloaz AND m.helyaz = h.az ");
         // Szerelő szűrés hozzáadása
@@ -117,7 +117,7 @@ public class Olvas2Controller {
         }
         // Utca név szűrés hozzáadása
         if (!cimKereso.getText().isEmpty()) {
-            newFeltetel.append(" AND h.utca LIKE '").append(cimKereso.getText()).append("%'");
+            newFeltetel.append(" AND h.utca LIKE '%").append(cimKereso.getText()).append("%'");
         }
         //értékhatár szűrés hozzáadása
         if(rb1.isSelected())

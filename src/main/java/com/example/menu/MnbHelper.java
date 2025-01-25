@@ -1,8 +1,8 @@
 package com.example.menu;
-import jakarta.xml.ws.WebServiceException;
-import com.mnbapi.MNBArfolyamServiceSoap;
-import com.mnbapi.MNBArfolyamServiceSoapGetExchangeRatesStringFaultFaultMessage;
-import com.mnbapi.MNBArfolyamServiceSoapImpl;
+
+import com.example.mnbapi.MNBArfolyamServiceSoap;
+import com.example.mnbapi.MNBArfolyamServiceSoapGetExchangeRatesStringFaultFaultMessage;
+import com.example.mnbapi.MNBArfolyamServiceSoapImpl;
 import javafx.scene.chart.XYChart;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

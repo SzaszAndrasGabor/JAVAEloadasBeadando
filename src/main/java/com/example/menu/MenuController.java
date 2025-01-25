@@ -73,6 +73,12 @@ public class MenuController {
             case "Grafikon":
                 fxmlFileName = "grafikon.fxml";
                 break;
+            case "Számlainformációk":
+                fxmlFileName = "szamlainf.fxml";
+                break;
+            case "Aktuális árak":
+                fxmlFileName = "aktarak.fxml";
+                break;
 
             // További esetek hozzáadása szükség szerint
             default:

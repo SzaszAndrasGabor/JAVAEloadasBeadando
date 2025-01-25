@@ -20,6 +20,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.44.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.gwenn</groupId>
+            <artifactId>sqlite-dialect</artifactId>
+            <version>0.1.4</version>
+        </dependency>
+
+        <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.2</version>
@@ -75,17 +86,15 @@
             <version>2.12.5</version>
         </dependency>
         <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.43.0.0</version>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
         </dependency>
         <dependency>
-            <groupId>com.github.gwenn</groupId>
-            <artifactId>sqlite-dialect</artifactId>
-            <version>0.1.4</version>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>4.0.3</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -111,7 +120,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.example.menu</mainClass>
+                    <mainClass>com.example.menu.MenuApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>

@@ -39,11 +39,11 @@
                         </Menu>
                     <Menu mnemonicParsing="false" text="Forex">
                         <items>
-                            <MenuItem mnemonicParsing="false" text="Számlainformációk"/>
-                            <MenuItem mnemonicParsing="false" text="Aktuális árak"/>
-                            <MenuItem mnemonicParsing="false" text="Historikus árak"/>
-                            <MenuItem mnemonicParsing="false" text="Pozíció nyitás"/>
-                            <MenuItem mnemonicParsing="false" text="Pozíció zárás"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction"  text="Számlainformációk"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Aktuális árak"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Historikus árak"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Pozíció nyitás"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Pozíció zárás"/>
                             <SeparatorMenuItem/>
                             <MenuItem mnemonicParsing="false" text="Nyitott pozíciók"/>
                         </items>
