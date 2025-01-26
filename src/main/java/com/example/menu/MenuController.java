@@ -88,6 +88,9 @@ public class MenuController {
             case "Pozíció zárás":
                 fxmlFileName = "pzar.fxml";
                 break;
+            case "Nyitott pozíciók":
+                fxmlFileName = "nyitott.fxml";
+                break;
 
             // További esetek hozzáadása szükség szerint
             default:

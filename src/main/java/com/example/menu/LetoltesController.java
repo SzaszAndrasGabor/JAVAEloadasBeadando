@@ -1,6 +1,5 @@
 package com.example.menu;
 
-import com.example.menu.MnbHelper;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
@@ -21,7 +20,7 @@ public class LetoltesController {
         textLabel1.setText("Letöltés");
     }
 public void letoltes(){
-        MnbHelper helper = new MnbHelper();
+        MnbKliens helper = new MnbKliens();
         Map<String, String> allInfo = new HashMap<>();
 
         FileChooser fileChooser = new FileChooser();

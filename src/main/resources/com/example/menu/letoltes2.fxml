@@ -14,7 +14,7 @@
             <Font size="18.0" />
         </font></Label>
 
-        <Label layoutX="18.0" layoutY="40.0" prefHeight="17.0" prefWidth="738.0" text=" " />
+        <Label fx:id="uzenetLabel" layoutX="18.0" layoutY="40.0" prefHeight="17.0" prefWidth="738.0" text=" " />
         <Label layoutX="214.0" layoutY="104.0">Valuta:</Label>
         <ComboBox fx:id="currencyComboBox" layoutX="263.0" layoutY="100.0" prefHeight="25.0" prefWidth="72.0" />
         <Label layoutX="213.0" layoutY="157.0">Dátum:</Label>

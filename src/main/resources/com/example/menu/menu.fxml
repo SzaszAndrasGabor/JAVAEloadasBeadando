@@ -45,7 +45,7 @@
                             <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Pozíció nyitás"/>
                             <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Pozíció zárás"/>
                             <SeparatorMenuItem/>
-                            <MenuItem mnemonicParsing="false" text="Nyitott pozíciók"/>
+                            <MenuItem mnemonicParsing="false" onAction="#handleMenuAction" text="Nyitott pozíciók"/>
                         </items>
                     </Menu>
                 </menus>
