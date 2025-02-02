@@ -1,15 +1,16 @@
 package com.example.menu;
 
+
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 public class OlvasController {
 
@@ -60,8 +61,12 @@ public class OlvasController {
     private   void  Tablabovit() throws SQLException {
         //OlvasDAO newOlvasDAO = new OlvasDAO(1,"Budapest", "Podhorszky utca 68"," Kiss Lajos",3,15000);
         OlvasDAO ujsor;
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatbazis/javabead.db");
+
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatok/feladat.db");
         Statement stmt = conn.createStatement();
+
+
+
         ResultSet rs;
         rs = stmt.executeQuery(
                 "SELECT m.helyaz, h.telepules, h.utca, sz.nev, m.munkaora, m.anyagar " +

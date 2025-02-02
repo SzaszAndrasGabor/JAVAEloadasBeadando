@@ -69,7 +69,7 @@ public class Olvas2Controller {
     private void Legordulo() throws SQLException {
         cb1.getItems().clear();
         cb1.getItems().add(new Szerelo(0, "Válassz")); // Alapértelmezett elem
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatbazis/javabead.db");
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatok/feladat.db");
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT az, nev FROM szerelo");
 
@@ -93,7 +93,7 @@ public class Olvas2Controller {
     public void Tablabovit() throws SQLException {
         tablazat.getItems().clear(); // Táblázat elemeinek törlése
         OlvasDAO ujsor;
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatbazis/javabead.db");
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:/c:/adatok/feladat.db");
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery(
                 "SELECT m.helyaz, h.telepules, h.utca, sz.nev, m.munkaora, m.anyagar " +
